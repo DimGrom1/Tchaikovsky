@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@1,400;1,700&family=Pangolin&display=swap"
+        rel="stylesheet">
+    <title>музыкальный плеер
+
+    </title>
+</head>
+
+<body>
+    <audio >
+        <source src="Tchaikovsky,_Concerto_No.1_in_B-flat_minor_Op.23,_I._Allegro.mp3" type="audio/mp3">
+    </audio>
+    <div class="slideshow">
+        <img src="slide1.jpg" alt="" class="slide">
+    </div>
+    <div class="player">
+        <input type="range" min="0" max="1000" value="50" class="slider" id="myRange">
+        <div class="playerLeft">
+            <a href="#/" id="back" class="backButton"></a>
+            <a href="#/" id="play" class="playButton"></a>
+            <a href="#/" id="next" class="nextButton"></a>
+            <img src="Tchaikovsky.jpg" alt="">
+            <div class="info">
+                <h2 class="trackName">Tchaikovsky, Concerto No.1 in_B-flat minor Op.23, I. Allegro</h2>
+                <p>Чайковский</p>
+                
+            </div>
+            <input type="range" min="0" max="100" value="50" class="volume" id="myRange">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<!-- доделать слайды -->
